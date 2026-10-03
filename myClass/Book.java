@@ -48,7 +48,7 @@ public class Book extends DB_Element
      */
     public String toString()
     {
-        return 
+        return "";
     }
 
 

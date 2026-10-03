@@ -31,7 +31,7 @@ public class User extends DB_Element
      */
     public String getID()
     {
-        return 
+        return String.valueOf(stID);
     }
 
     /**
@@ -42,7 +42,7 @@ public class User extends DB_Element
      */
     public String toString()
     {
-        return 
+        return "";
     }
 
 }
