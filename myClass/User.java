@@ -1,7 +1,7 @@
 package myClass;
 
 /**
- * User 클래스의 설명을 작성하세요.
+ * 이용자 객체를 생성하고 생성된 이용자 객체의 여러가지 기능을 다루는 클래스
  *
  * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
  * @version (2026.10.03)
@@ -12,10 +12,10 @@ public class User extends DB_Element
     private Integer stID;
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * User클래스의 객체 생성자
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  stID : 이용자의 고유 ID 
+     * @param  name : 이용자의 이름
      */
     public User(int stID, String name)
     {
@@ -24,10 +24,9 @@ public class User extends DB_Element
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 이용자의 고유ID를 String으로 변환 후 반환하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @return  이용자의 고유ID
      */
     public String getID()
     {
@@ -35,10 +34,9 @@ public class User extends DB_Element
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 이용자에 대한 정보를 반환하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @return  이용자 고유ID, 이용자 이름을 형식에 맞게 출력
      */
     public String toString()
     {
