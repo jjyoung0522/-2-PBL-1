@@ -4,7 +4,7 @@ import myClass.*;
 import java.util.ArrayList;
 
 /**
- * LibDB 클래스의 설명을 작성하세요.
+ * 종류에 무관하게 DB객체를 생성하고 생성된 DB의 기능을 다루는 제네릭클래스
  *
  * @author (2025320031 김단이 , 2023320040 이기웅, 2023320006 정준영)
  * @version (2026.10.03)
@@ -14,10 +14,8 @@ public class LibDB<T>
     private ArrayList<T> db;
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * LibDB의 객체 생성자
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public LibDB()
     {
@@ -25,10 +23,9 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 객체를 DB에 추가하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  DB에 추가할 객체
      */
     public void addElement(T element)
     {
@@ -36,10 +33,10 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 고유ID가 주어졌을 때 해당 객체를 반환하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  findID : 찾을 객체의 고유ID
+     * @return 고유ID에 해당하는 객체
      */
     public T findElement(String findID)
     {
@@ -53,10 +50,8 @@ public class LibDB<T>
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * DB에 들어있는 모든 객체를 출력하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
      */
     public void printAllElements()
     {
