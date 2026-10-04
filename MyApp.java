@@ -28,7 +28,7 @@ public class MyApp
         System.out.println("----- 이용자 목록 출력 -----");
         printDB(userDB);
 
-        Book book1 = new Book("홍길동", "B02", "ABC", "Java Programming", 2000);
+        Book book1 = new Book("홍길동", "B01", "ABC", "Java Programming", 2000);
         Book book2 = new Book("profsHwang", "B02", "SMU", "Software Analysis and Design", 2023);
         Book book3 = new Book("황기태", "B03", "생능출판", "명품 자바프로그래밍", 2025);
         Book book4 = new Book("profsHwang", "B04", "SMU", "소프트웨어테스트", 2024);
