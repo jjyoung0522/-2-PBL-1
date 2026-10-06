@@ -46,7 +46,7 @@ public class MyApp
         loanDB.put(userDB.findElement("2025320003"),bookDB.findElement("B04"));
 
         printLoanList(loanDB);
-        
+
         System.out.println("--------------------");
     }
 
@@ -69,7 +69,7 @@ public class MyApp
     {
         System.out.println("----- 대출 현황 -----");
         for (User user : loanDB.keySet()){
-            System.out.println(user + "===>" + loanDB.get(user));
+            System.out.println(user + " ===> " + loanDB.get(user));
         }
     }
 }
