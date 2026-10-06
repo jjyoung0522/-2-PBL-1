@@ -9,7 +9,7 @@ package myClass;
 public abstract class DB_Element
 {
     /**
-     * 객체의 ID를 반환하는 메소드
+     * 객체의 ID를 반환하는 추상 메소드
      * 
      * @return  객체가 지닌 ID
      */
