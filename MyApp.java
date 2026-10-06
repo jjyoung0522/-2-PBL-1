@@ -45,8 +45,8 @@ public class MyApp
         loanDB.put(userDB.findElement("2025320002"),bookDB.findElement("B03"));
         loanDB.put(userDB.findElement("2025320003"),bookDB.findElement("B04"));
 
-        System.out.println("----- 대출 현황 -----");
         printLoanList(loanDB);
+        
         System.out.println("--------------------");
     }
 
@@ -67,6 +67,7 @@ public class MyApp
      */
     public static void printLoanList(HashMap<User,Book> loanDB)
     {
+        System.out.println("----- 대출 현황 -----");
         for (User user : loanDB.keySet()){
             System.out.println(user + "===>" + loanDB.get(user));
         }
